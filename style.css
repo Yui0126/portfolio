@@ -49,13 +49,14 @@ h2 {
     display: inline-block;
 }
 
-.main_image {
+.main_image1, .main_image2, .main_image3 {
     display: inline-block;
     margin-left: 33%;
-    width: 210px;
-    height: 297px;
+    width: 230px;
+    height: 317px;
     /* margin-bottom: 20px; */
 }
+
 
 .max {
     display: inline-block;
@@ -101,4 +102,9 @@ ul.slides {
         margin-left: 15px;
         margin-bottom: 7px;
     }
+}
+
+video {
+    display: block;
+margin: 0 auto;
 }

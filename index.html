@@ -19,23 +19,23 @@
 <h3>Examples of My Past Projects</h3>
 <p><b>- Research on Wildlife Trade</b></p>
     <div class="points">
-        I was in charge of collecting, cleaning and analysing the data of wildlife trade from various sources, including well formated official data from customs/international committees, as well as non-official sources such as personal websites, media outlets. I also checked the previous research in the related field and contributed in writing and publishing the reports (English/Japanese).
+        I was in charge of <b>collecting, cleaning and analysing data</b> of wildlife trade from various sources, including well formated official data from customs/international committees, as well as non-official sources such as personal websites, media outlets. I also checked the previous research in the related field and contributed in writing and publishing the reports (English/Japanese).
     </div>
 
     <div class="max">
-        <img class="main_image" src="materials/iceland.jpg">
-        <img class="main_image" src="materials/Moldova2.jpg" style="display:none">
-        <img class="main_image" src="materials/Russia.jpg" style="display:none">
+        <img class="main_image1" src="materials/otter.png">
+        <img class="main_image1" src="materials/otter2.png" style="display:none">
+        <img class="main_image1" src="materials/exotic pet.png" style="display:none">
     </div>
     <div class="max">
         <ul class="slides">
-            <li><img class="demo opacity hover-opacity-off" src="materials/iceland.jpg" onclick="currentDiv(1)">
+            <li><img class="demo opacity hover-opacity-off" src="materials/otter.png" onclick="currentDiv1(1)">
             </li>
           <li class="slide_col4">
-            <img class="demo opacity hover-opacity-off" src="materials/Moldova2.jpg" onclick="currentDiv(2)">
+            <img class="demo opacity hover-opacity-off" src="materials/otter2.png" onclick="currentDiv1(2)">
           </li>
           <li>
-            <img class="demo opacity hover-opacity-off" src="materials/Russia.jpg" onclick="currentDiv(3)">
+            <img class="demo opacity hover-opacity-off" src="materials/exotic pet.png" onclick="currentDiv1(3)">
           </li>
         </ul>
     </div>
@@ -45,22 +45,22 @@
 
 <p><b>- Statistics and Data Analysis using R</b></p>
 <div class="points">
-    I wrote a few project reports for my online statistics/data analysis courses. The projects helped me gain basic understanding in probability theory, inferencial statistics and multiple linear regression models.
+    I wrote a few project reports for my online statistics/data analysis courses. The projects helped me gain basic understanding in <b>basic probability theory, inferencial statistics and multiple linear regression models</b>.
 </div>
 <div class="max">
-    <img class="main_image" src="materials/iceland.jpg">
-    <img class="main_image" src="materials/Moldova2.jpg" style="display:none">
-    <img class="main_image" src="materials/Russia.jpg" style="display:none">
+    <img class="main_image2" src="materials/analysis.png">
+    <img class="main_image2" src="materials/inference.png" style="display:none">
+    <img class="main_image2" src="materials/regression.png" style="display:none">
 </div>
 <div class="max">
     <ul class="slides">
-        <li><img class="demo opacity hover-opacity-off" src="materials/iceland.jpg" onclick="currentDiv(1)">
+        <li><img class="demo opacity hover-opacity-off" src="materials/analysis.png" onclick="currentDiv2(1)">
         </li>
       <li class="slide_col4">
-        <img class="demo opacity hover-opacity-off" src="materials/Moldova2.jpg" onclick="currentDiv(2)">
+        <img class="demo opacity hover-opacity-off" src="materials/inference.png" onclick="currentDiv2(2)">
       </li>
       <li>
-        <img class="demo opacity hover-opacity-off" src="materials/Russia.jpg" onclick="currentDiv(3)">
+        <img class="demo opacity hover-opacity-off" src="materials/regression.png" onclick="currentDiv2(3)">
       </li>
     </ul>
 </div>
@@ -71,23 +71,71 @@
 
 <p><b>- Web Design and Development</b></p>
 <div class="points">
-    I am in charge of maintaining my workplace's website, including the design part (HTML/CSS/JS). I also made it possible to search programs as well as connecting database with another application system. Main languages I used are PHP, JavaScript and SQL, but I also used Python to facilitate my work.
+    I am in charge of maintaining my workplace's website, including the design part (HTML/CSS/JS). I also made it possible to <b>search projects as well as connecting the database with another application system</b>. Main languages I used are PHP, JavaScript and SQL, but I also used Python to facilitate my work.
 </div>
-
-</div>
-<p>Hello?</p>
-<p>Good Evening!</p>
-
+<video width="320" height="240" controls>
+    <source src="materials/search.mp4" type="video/mp4">
+  </video>
+  <div class="margin"></div>
+  <div style="text-align: center">-> <a href="https://www.icye-japan.com/program/international-work-camp/search/" target="_blank">View the actual webpage with search function</a></div>
+  <div style="text-align: center">-> <a href="https://www.icye-japan.com/program/icye-long-term-volunteering/" target="_blank">View another webpage I designed</a></div>
+  <div class="margin"></div>
+  <video width="320" height="240" controls>
+    <source src="materials/database.mp4" type="video/mp4">
+  </video>
+  <div class="margin"></div>
+  <h3>That's all for now :)</h3>
+  <p>Thank you very much for checking my portfolio! If you want to more details presented in this portfolio or are interested in getting to know my works more, please contact me anytime via <a href="https://www.linkedin.com/in/yui-naruse-004a10253/" target="_blank">LinkedIn</a>!</p>
 </body>
   
   <script>
-  function currentDiv(n) {
-    showDivs(slideIndex = n);
+  function currentDiv1(n) {
+    showDivs1(slideIndex = n);
+  }
+
+  function currentDiv2(n) {
+    showDivs2(slideIndex = n);
+  }
+
+  function currentDiv3(n) {
+    showDivs3(slideIndex = n);
   }
   
-  function showDivs(n) {
+  function showDivs1(n) {
     var i;
-    var x = document.getElementsByClassName("main_image");
+    var x = document.getElementsByClassName("main_image1");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" opacity-off", "");
+    }
+    x[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " opacity-off";
+  }
+
+  function showDivs2(n) {
+    var i;
+    var x = document.getElementsByClassName("main_image2");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" opacity-off", "");
+    }
+    x[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " opacity-off";
+  }
+
+  function showDivs3(n) {
+    var i;
+    var x = document.getElementsByClassName("main_image3");
     var dots = document.getElementsByClassName("demo");
     if (n > x.length) {slideIndex = 1}
     if (n < 1) {slideIndex = x.length}
