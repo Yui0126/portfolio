@@ -2,7 +2,7 @@ body {
     font-size: 16px;
     display: block;
     color: #31326F;
-    background-color: #DBF6E9;
+    background-color: #FFF6F6;
     font-family: sans-serif;
     max-width: 600px;
     margin: auto;
@@ -93,15 +93,48 @@ ul.slides {
 
 
 @media (max-width:599px) {
-    .slide_col4 {
-        width: 40px;
-        height: 60px;
-        float: left;
-        cursor: pointer;
+    body {
+        max-width: 530px;
+      }
+
+      p, h3, h2 {
+        margin: 15px;
+      }
+
+    .brief_description {
+        display: block;
+        width: 360px;
+        margin: auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 15px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+        margin-left: 10px;
         margin-right: 10px;
-        margin-left: 15px;
-        margin-bottom: 7px;
     }
+
+    .points {
+        margin-top: 5px;
+        margin-bottom: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        display: inline-block;
+    }
+
+    .main_image1, .main_image2, .main_image3 {
+        display: inline-block;
+        margin-left: 33%;
+        width: 160px;
+        height: 220px;
+        /* margin-bottom: 20px; */
+    }
+
+    .slides img{
+        display: none;
+    }
+    
+    
 }
 
 video {
